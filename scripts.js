@@ -2,20 +2,21 @@ function promptMe (){
   var playerChoice = prompt ("Enter your Choice: rock, paper, scissors")
   var choiceUpper = playerChoice.toUpperCase();
   var computerChoice = Math.random ();
+    console.log (computerChoice);
   if (computerChoice < 0.33){
-    computerChoice = "rock";
+    computerChoice = "ROCK";
   } else if (computerChoice > 0.33 && computerChoice <=0.60){
-    computerChoice = "paper";
+    computerChoice = "PAPER";
   }
   else {
-    computerChoice = "scissors";
+    computerChoice = "SCISSORS";
   }
   var game = function (user,computer){
     if (user === computer){
       alert ("It's a draw!");
     }
     else if (user === "PAPER"){
-      if (computer === "scissors"){
+      if (computer === "SCISSORS"){
         alert ("Sorry, computer wins!");
       }
       else {
@@ -23,7 +24,7 @@ function promptMe (){
       }
     }
     else if (user === "ROCK"){
-      if (computer === "paper"){
+      if (computer === "PAPER"){
         alert ("Sorry, computer wins");
       }
       else {
@@ -31,7 +32,7 @@ function promptMe (){
       }
     }
     else if (user === "SCISSORS") {
-      if (computer === "rock"){
+      if (computer === "ROCK"){
         alert ("Sorry, computer wins");
       }
       else {
